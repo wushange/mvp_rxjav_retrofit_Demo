@@ -1,0 +1,78 @@
+apply plugin: 'com.android.application'
+apply plugin: 'android-apt'
+android {
+    compileSdkVersion 23
+    buildToolsVersion "24.0.0 rc3"
+
+    defaultConfig {
+        applicationId "com.dmcc.dmcc_crm"
+        minSdkVersion 21
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+        dependencies {
+            compile fileTree(include: ['*.jar'], dir: 'libs')
+            testCompile 'junit:junit:4.12'
+            compile 'com.android.support:appcompat-v7:23.4.0'
+            compile 'com.android.support:design:23.4.0'
+            compile 'com.android.support:cardview-v7:23.4.0'
+
+            compile 'com.wushange:commutilLite:0.0.2@aar'
+            compile 'com.wushange:converter-fastjson:1.0'
+
+            compile 'com.wang.avi:library:1.0.5'
+            compile 'com.nineoldandroids:library:2.4.0'
+            compile 'com.baoyz.swipemenulistview:library:1.3.0'
+            compile 'net.frakbot:jumpingbeans:1.3.0'
+            compile 'org.xutils:xutils:3.3.34'
+            compile 'cn.finalteam:galleryfinal:1.4.8.7'
+            compile 'cn.pedant.sweetalert:library:1.3'
+
+            compile 'com.jude:easyrecyclerview:4.0.2'
+            compile 'jp.wasabeef:recyclerview-animators:2.2.3'
+            //6.0权限检测
+            compile 'com.github.ParkSangGwon:TedPermission:v1.0.11'
+
+            //RxJava+retrofit+okhttp
+            compile 'io.reactivex:rxjava:1.1.0'
+            compile 'io.reactivex:rxandroid:1.1.0'
+            compile 'com.squareup.retrofit2:retrofit:2.1.0'
+            compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+            compile 'com.squareup.okhttp3:okhttp:3.3.1'
+            compile 'com.alibaba:fastjson:1.2.8'
+            /**
+             * 小视频录制相关
+             */
+//            compile 'com.android.support:support-v13:23.4.0'
+            apt "com.google.dagger:dagger-compiler:2.0.1"
+            compile 'com.google.dagger:dagger:2.0.1'
+//            apt 'com.google.auto.factory:auto-factory:1.0-beta2'
+//            compile 'com.fasterxml.jackson.core:jackson-databind:2.4.4'
+//            compile 'com.google.code.findbugs:jsr305:3.0.0'
+//            compile 'com.google.guava:guava:18.0'
+
+
+
+            debugCompile 'com.squareup.leakcanary:leakcanary-android:1.4-beta2'
+            releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.4-beta2'
+
+            compile project(':chatlibrary')
+            compile files('libs/badgeview.jar')
+        }
+        exclude 'META-INF/NOTICE'
+    }
+
+}
+
+dependencies {
+    compile files('libs/pinyin4j-2.5.0.jar')
+}

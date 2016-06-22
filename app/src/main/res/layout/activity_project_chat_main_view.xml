@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sj.keyboard.XhsEmoticonsKeyBoard xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ek_bar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true">
+
+            <include layout="@layout/include_app_title"></include>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/top">
+
+
+            <com.dmcc.chatlibrary.EaseChatMessageList
+                android:id="@+id/lv_chat"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="#00000000"
+                android:divider="@null"
+                android:fadingEdge="none"
+                android:fitsSystemWindows="true"
+                android:listSelector="#00000000"
+                android:scrollbarStyle="outsideOverlay"
+                android:scrollingCache="false"
+                android:smoothScrollbar="true"
+                android:stackFromBottom="true" />
+
+            <com.dmcc.chatlibrary.widget.EaseVoiceRecorderView
+
+                android:id="@+id/voice_recorder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <com.dmcc.dmcc_crm.customview.MultiDirectionSlidingDrawer
+            android:id="@+id/drawer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/top"
+            app:content="@+id/content"
+            app:direction="topToBottom"
+            app:handle="@+id/handle">
+
+            <include
+                android:id="@id/content"
+                layout="@layout/pen_content" />
+
+            <ImageView
+                android:id="@+id/handle"
+                android:layout_width="wrap_content"
+                android:layout_height="40px"
+                android:src="@mipmap/sliding_drawer_handle_bottom" />
+
+        </com.dmcc.dmcc_crm.customview.MultiDirectionSlidingDrawer>
+
+
+    </RelativeLayout>
+
+</sj.keyboard.XhsEmoticonsKeyBoard>

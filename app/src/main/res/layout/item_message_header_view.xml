@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/message_header_tuijian_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:background="?android:attr/selectableItemBackground"
+        android:gravity="center_vertical">
+
+
+        <ImageView
+            android:id="@+id/item_message_head_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/tuijian_icon" />
+
+        <TextView
+            android:id="@+id/item_message_head_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/item_message_head_icon"
+            android:text="刚刚"
+            android:textColor="@color/list_itease_secondary_color"
+            android:textSize="13sp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/item_message_head_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/item_message_head_icon"
+            android:layout_marginLeft="15dp"
+            android:layout_toEndOf="@+id/item_message_head_icon"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="推荐"
+            android:textColor="@color/item_text_color"
+            android:textSize="16sp" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/darkgrey" />
+
+    <RelativeLayout
+        android:id="@+id/message_header_share_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:background="?android:attr/selectableItemBackground"
+        android:gravity="center_vertical">
+
+
+        <ImageView
+            android:id="@+id/item_message_head2_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/recshare" />
+
+        <TextView
+            android:id="@+id/item_message_head2_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/item_message_head2_name"
+            android:text="刚刚"
+            android:textColor="@color/list_itease_secondary_color"
+            android:textSize="13sp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/item_message_head2_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/item_message_head2_icon"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="我收到的分享"
+            android:textColor="@color/item_text_color"
+            android:textSize="16sp" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/darkgrey" />
+</LinearLayout>

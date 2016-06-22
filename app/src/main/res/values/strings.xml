@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">DMCC_CRM</string>
+    <string name="move_up_to_cancel">手指上滑，取消发送</string>
+    <string name="release_to_cancel">松开手指，取消发送</string>
+    <string name="Recording_without_permission">Recording without permission</string>
+    <string name="The_recording_time_is_too_short">The recording time is too short</string>
+    <string name="send_failure_please">Send failure, please test whether the server connection</string>
+    <string name="Send_voice_need_sdcard_support">Send voice need sdcard support</string>
+    <string name="recoding_fail">The recording failure, please try again！</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+
+    <!-- Example settings for Data & Sync -->
+
+    <!-- Example settings for Notifications -->
+
+    <!-- Strings related to login -->
+    <string name="action_sign_in_short">Sign in</string>
+</resources>

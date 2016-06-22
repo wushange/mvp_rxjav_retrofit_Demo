@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#f6f6f6"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp">
+
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="5">
+
+        <EditText
+            android:id="@+id/search_content"
+            android:layout_width="fill_parent"
+            android:layout_height="36dp"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/search_back"
+            android:imeOptions="actionSearch"
+            android:paddingLeft="32dp"
+            android:singleLine="true"
+            android:textColor="@color/gray"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/float_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/search_icon" />
+
+        <ImageButton
+            android:id="@+id/search_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/search_clear" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/search_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:text="请输入关键字"
+        android:textColor="@color/btn_selected"
+        android:textSize="16dp"
+        android:visibility="gone" />
+
+</LinearLayout>

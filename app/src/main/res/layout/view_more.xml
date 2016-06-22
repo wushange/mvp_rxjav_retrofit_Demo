@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/av_indicator"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:indeterminate="false"
+        app:indicator="BallPulse"
+        app:indicator_color="@color/appThemeColor" />
+
+    <TextView
+        android:id="@+id/tv_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:paddingLeft="5dp"
+        android:text="更多加载中" />
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:indeterminate="false"
+        app:indicator="BallPulse"
+        app:indicator_color="@color/appThemeColor" />
+
+
+</LinearLayout>

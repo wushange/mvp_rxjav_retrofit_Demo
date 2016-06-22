@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">#FF4081</color>
+    <color name="comui_tab_text_color">#ff333333</color>
+    <color name="appThemeColor">#49B3FF</color>
+    <color name="item_text_color">#3e4245</color>
+    <color name="item_sub_text_color">#9b9b9b</color>
+    <color name="item_line_color">#e5e5e5</color>
+    <color name="view_defulat_color">#f4f4f4</color>
+</resources>
